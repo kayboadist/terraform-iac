@@ -8,6 +8,12 @@ resource "azurerm_kubernetes_cluster" "kays-cluster" {
     name       = "default"
     node_count = 3
     vm_size    = "Standard_D2_v2"
+    
+    upgrade_settings {
+      drain_timeout_in_minutes      = 0
+      max_surge                     = "10%"
+      node_soak_duration_in_minutes = 0
+    }
   }
 
   service_principal {
@@ -19,4 +25,3 @@ resource "azurerm_kubernetes_cluster" "kays-cluster" {
     Environment = var.environment
   }
 }
-

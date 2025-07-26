@@ -20,11 +20,11 @@ variable "environment" {
 
 variable "client_id" {
   type        = string
-  description = "Client ID for the service principal"
+  description = "Service Principal Client ID"
 }
 
 variable "client_secret" {
   type        = string
-  description = "Client Secret for the service principal"
+  description = "Service Principal Client Secret"
   sensitive   = true
 }
