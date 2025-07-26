@@ -42,3 +42,9 @@ variable "environment" {
   type        = string
   default     = "dev"
 }
+
+variable "cluster_name" {
+  description = "kubernetes cluster name"
+  type        = string
+  default     = "kaysfirst-aks"
+}
