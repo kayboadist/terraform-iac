@@ -48,3 +48,14 @@ variable "cluster_name" {
   type        = string
   default     = "kaysfirst-aks"
 }
+
+variable "client_id" {
+  type        = string
+  description = "Client ID for the service principal"
+}
+
+variable "client_secret" {
+  type        = string
+  description = "Client Secret for the service principal"
+  sensitive   = true
+}

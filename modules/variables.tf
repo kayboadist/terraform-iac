@@ -10,7 +10,7 @@ variable "environment" {
 
 variable "location" {
   type        = string
-  description = "Resource Location"  
+  description = "Resource Location"
 }
 
 variable "resource_group_name" {

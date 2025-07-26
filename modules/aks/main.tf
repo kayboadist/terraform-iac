@@ -11,8 +11,8 @@ resource "azurerm_kubernetes_cluster" "kays-cluster" {
   }
 
   service_principal {
-    client_id     = "00000000-0000-0000-0000-00000000"
-    client_secret = "00000000000000000000000000000000"
+    client_id     = var.client_id
+    client_secret = var.client_secret
   }
 
   tags = {
